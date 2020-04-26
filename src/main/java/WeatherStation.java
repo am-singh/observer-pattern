@@ -1,4 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class WeatherStation implements Subject{
+
+    List<Observer> observerCollection;
+
+    public WeatherStation() {
+        this.observerCollection = new ArrayList<Observer>();
+    }
 
     void temperature() {
 
